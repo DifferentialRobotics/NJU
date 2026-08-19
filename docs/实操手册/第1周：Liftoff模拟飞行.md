@@ -6,7 +6,7 @@
 
 本任务基于 Liftoff 无人机飞行模拟器开展，选择农场（Farm）飞行场景作为训练环境。场景中包含农田、建筑物等典型户外环境元素，用于模拟无人机实际飞行过程中可能遇到的开放环境。飞行区域设置为预定环形航线区域，起飞点位于场景指定位置。无人机需沿规划航线绕农场区域进行连续飞行，完成一圈完整巡航任务。飞行过程中，场景内设置自然障碍物及地形变化，用于考察飞行器的高度控制、姿态控制以及人工操控稳定性。
 
-![image\.png](图片和附件/image%201.png)
+<img src="images/week_1/1-1.png" width="1000" />
 
 二、任务描述 
 
@@ -24,15 +24,13 @@
 
 2. 飞行安全性：飞行过程中发生撞击、失控、坠机等情况，根据事故次数及严重程度扣除相应分数；严重坠机导致任务中断，视为未完成任务。
 
-3. 航线完成情况：未完成完整一圈农场航线飞行，根据缺失航段比例扣除相应分数；
-
-未完成返航及降落流程，扣除相应分数。
+3. 航线完成情况：未完成完整一圈农场航线飞行，根据缺失航段比例扣除相应分数；未完成返航及降落流程，扣除相应分数。
 
 4. 飞行稳定性：飞行过程中应保持平稳姿态；若出现明显姿态波动、频繁修正、操控不稳定等情况，根据飞行表现酌情扣分。
 
 5. 任务完成质量：综合评价无人机起飞、巡航、转向、返航及降落过程；飞行轨迹平滑、姿态稳定、高度控制合理者获得较高评价。
 
-![image\.png](图片和附件/image.png)
+<img src="images/week_1/1-2.png" width="1000" />
 
 # 实践一： Liftoff模拟飞行实操流程
 
@@ -42,19 +40,34 @@
 
 连接前检查遥控器电量状态、USB\-C数据线连接情况以及计算机端口是否正常。通过USB\-C数据线将遥控器与计算机连接后，确认系统能够正确识别遥控器输入设备，并检查设备连接状态是否正常。若系统未检测到遥控器，应依次排查数据线、USB接口及遥控器连接模式，确保遥控器处于可连接状态后重新连接。
 
-[手柄连接\.mp4](图片和附件/手柄连接.mp4)
+<p >
+  <video width="950" controls>
+    <source src="
+    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/j30v2-wiki/video/Radar_positioning_test.mp4" type="video/mp4">
+  </video>
+</p>
 
 ### \(2\) 遥控器校准
 
 完成 T8L 遥控器与 Liftoff 模拟环境的连接，通过模拟器控制设置完成遥控通道映射与输入校准，检查摇杆、油门及功能开关响应情况，确保遥控输入与无人机控制动作一致，为后续飞行训练提供可靠的操控基础。
 
-[校准\.mp4](图片和附件/校准.mp4)
+<p >
+  <video width="950" controls>
+    <source src="
+    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/j30v2-wiki/video/Radar_positioning_test.mp4" type="video/mp4">
+  </video>
+</p>
 
 ### \(3\) 遥控器通道映射
 
 采用 Mode 2（美国手）操控模式进行配置：左摇杆上下控制油门，左右控制偏航；右摇杆上下控制俯仰，左右控制横滚。进入 Liftoff 控制器设置界面完成遥控通道识别与输入响应检查，确认各控制通道映射正确后进入飞行场景开展模拟飞行训练。
 
-[美国手\.mp4](图片和附件/美国手.mp4)
+<p >
+  <video width="950" controls>
+    <source src="
+    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/j30v2-wiki/video/Radar_positioning_test.mp4" type="video/mp4">
+  </video>
+</p>
 
 ## 1\.2 飞行环境与控制模式设置
 
@@ -62,23 +75,43 @@
 
 进入 Liftoff 自由飞行模式，加载农场训练场景，选择指定无人机模型，完成模拟飞行任务环境搭建。根据任务要求设置无人机初始位置和飞行参数，确保无人机能够在指定场景内开展自主飞行与航线巡航训练。
 
-[飞行模式选择\.mp4](图片和附件/飞行模式选择.mp4)
+<p >
+  <video width="950" controls>
+    <source src="
+    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/j30v2-wiki/video/Radar_positioning_test.mp4" type="video/mp4">
+  </video>
+</p>
 
 1. 设置第三人称视角：在 Liftoff 中切换至第三人称视角，调整观察距离和视角方向，使无人机及周围环境保持清晰可见，便于观察飞行姿态、判断空间位置，提高模拟飞行训练过程中的操控稳定性。快捷键C、V切换场景模式，快捷键A、R切换视角。
 
-[第三视角\.mp4](图片和附件/第三视角.mp4)
+<p >
+  <video width="950" controls>
+    <source src="
+    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/j30v2-wiki/video/Radar_positioning_test.mp4" type="video/mp4">
+  </video>
+</p>
 
 ### \(2\) 设置自稳模式
 
 进入 Liftoff 飞行模式设置界面，选择 Level（自稳）飞行模式，使无人机具备自动姿态保持能力。当操作者松开摇杆后，无人机能够自动恢复水平姿态。
 
-[level模式\.mp4](图片和附件/level模式.mp4)
+<p >
+  <video width="950" controls>
+    <source src="
+    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/j30v2-wiki/video/Radar_positioning_test.mp4" type="video/mp4">
+  </video>
+</p>
 
 ## 1\.3 Liftoff模拟飞行
 
 1. 基于 Liftoff 模拟器构建虚拟飞行考核环境，学员通过遥控器操控无人机完成起飞、航向控制、姿态调整和航线巡航任务。无人机需按照预定路线完成农场场景一圈连续飞行，并保持合理高度和稳定姿态。考核过程中重点评价飞行轨迹完成度、姿态控制稳定性以及避障能力，发生碰撞、坠机或未完成规定航线等情况将进行相应扣分。
 
-[8月7日\.mp4](图片和附件/8月7日.mp4)
+<p >
+  <video width="950" controls>
+    <source src="
+    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/j30v2-wiki/video/Radar_positioning_test.mp4" type="video/mp4">
+  </video>
+</p>
 
 # 总结
 
