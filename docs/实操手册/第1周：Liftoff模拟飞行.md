@@ -43,7 +43,7 @@
 <p >
   <video width="950" controls>
     <source src="
-    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/j30v2-wiki/video/Radar_positioning_test.mp4" type="video/mp4">
+    https://diffrobots.oss-cn-hangzhou.aliyuncs.com/nju-wiki/1/%E6%89%8B%E6%9F%84%E8%BF%9E%E6%8E%A5.mp4" type="video/mp4">
   </video>
 </p>
 
